@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DLBanners">
+        <!-- 是否可以循环轮播-->
+        <attr name="DL_canLoop" format="boolean" />
+        <!-- 轮播时间间隔-->
+        <attr name="DL_durtion" format="integer" />
+        <!-- 游标位置-->
+        <attr name="DL_indicatorPos" />
+        <!-- 是否可以自动播放-->
+        <attr name="DL_autoPlay" format="boolean" />
+        <!-- 过渡动画-->
+        <attr name="DL_transitionEffect" />
+        <!--指示器默认样式-->
+        <attr name="DL_indicator_select" format="reference"></attr>
+        <!--指示器选中样式-->
+        <attr name="DL_indicator_unselect" format="reference"></attr>
+        <!--指示器距离底部距离-->
+        <attr name="DL_indicatorBottomPadding" format="integer"></attr>
+        <!--指示器原点大小(默认)-->
+        <attr name="DL_indicator_size" format="integer" />
+        <!--指示器选中显示系数-->
+        <attr name="DL_indicator_select_zoom" format="float" />
+    </declare-styleable>
+    <!-- 过渡动画-->
+    <attr name="DL_transitionEffect" format="enum">
+        <enum name="defaultEffect" value="0" />
+        <enum name="zoomEffect" value="1" />
+    </attr>
+    <!-- 指示器位置-->
+    <attr name="DL_indicatorPos" format="enum">
+        <enum name="bottom_mid" value="0" />
+        <enum name="bottom_right" value="1" />
+    </attr>
+</resources>

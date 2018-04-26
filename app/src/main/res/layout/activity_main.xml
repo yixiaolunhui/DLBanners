@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dl.banners.MainActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.lib.dlbanner.DLBanners
+                android:id="@+id/banners"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:DL_autoPlay="true"
+                app:DL_canLoop="true"
+                app:DL_durtion="2000"
+                app:DL_indicatorBottomPadding="20"
+                app:DL_indicatorPos="bottom_mid"
+                app:DL_indicator_select_zoom="1.0"
+                app:DL_indicator_size="8"
+                app:DL_transitionEffect="defaultEffect" />
+
+            <com.lib.dlbanner.DLBanners
+                android:id="@+id/banners2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:DL_autoPlay="true"
+                app:DL_canLoop="false"
+                app:DL_durtion="2500"
+                app:DL_indicatorBottomPadding="10"
+                app:DL_indicatorPos="bottom_right"
+                app:DL_indicator_select_zoom="1.0"
+                app:DL_indicator_size="8"
+                app:DL_transitionEffect="defaultEffect" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
